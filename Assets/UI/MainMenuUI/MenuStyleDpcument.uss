@@ -1,0 +1,91 @@
+VisualElement {
+}
+
+.contenedorPrincipal {
+    width: 100%;
+    height: 100%;
+    background-image: url("project://database/Assets/Sprites/UIMenu/gradiente%20de%20binario%20-%20fondo.png?fileID=2800000&guid=996cc5ad474dc8947b08a7d721126464&type=3#gradiente de binario - fondo");
+    background-color: rgb(0, 0, 0);
+}
+
+.titulo {
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-basis: 0%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    -unity-font-style: bold;
+    font-size: 250px;
+    min-width: 50%;
+    min-height: 25%;
+}
+
+.BOTONMENU {
+    flex-shrink: 0;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(56, 56, 56, 0);
+    -unity-background-image-tint-color: rgba(56, 56, 56, 0);
+    -unity-font: url("project://database/Assets/Sprites/UIMenu/Neonix.ttf?fileID=12800000&guid=6c258e101a433d34b9314b6e6201f35c&type=3#Neonix");
+    color: rgb(0, 194, 43);
+    font-size: 50px;
+    -unity-font-style: bold;
+    border-left-color: rgba(56, 56, 56, 0);
+    border-right-color: rgba(56, 56, 56, 0);
+    border-top-color: rgba(56, 56, 56, 0);
+    border-bottom-color: rgba(56, 56, 56, 0);
+    max-width: none;
+    min-width: auto;
+    flex-wrap: wrap;
+}
+
+.BOTONMENU:hover {
+    flex-shrink: 0;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 5%;
+    background-color: rgba(57, 118, 56, 0.79);
+    -unity-background-image-tint-color: rgba(56, 56, 56, 0);
+    -unity-font: url("project://database/Assets/Sprites/UIMenu/Neonix.ttf?fileID=12800000&guid=6c258e101a433d34b9314b6e6201f35c&type=3#Neonix");
+    color: rgb(0, 194, 43);
+    font-size: 50px;
+    -unity-font-style: bold;
+    border-left-color: rgba(56, 56, 56, 0);
+    border-right-color: rgba(56, 56, 56, 0);
+    border-top-color: rgba(56, 56, 56, 0);
+    border-bottom-color: rgba(56, 56, 56, 0);
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.BOTONMENU:active {
+    flex-shrink: 0;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 5%;
+    background-color: rgb(4, 255, 0);
+    -unity-background-image-tint-color: rgba(56, 56, 56, 0);
+    -unity-font: url("project://database/Assets/Sprites/UIMenu/Neonix.ttf?fileID=12800000&guid=6c258e101a433d34b9314b6e6201f35c&type=3#Neonix");
+    color: rgb(4, 48, 14);
+    font-size: 50px;
+    -unity-font-style: bold;
+    border-left-color: rgba(56, 56, 56, 0);
+    border-right-color: rgba(56, 56, 56, 0);
+    border-top-color: rgba(56, 56, 56, 0);
+    border-bottom-color: rgba(56, 56, 56, 0);
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
