@@ -1,0 +1,305 @@
+Using pre-set license
+Built from '2022.3/respin/2022.3.62f2-4af31df585-v2' branch; Version is '2022.3.62f3 (96770f904ca7) revision 9860879'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'es' Physical Memory: 18293 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2022.3.62f3\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Cristian/Downloads/Unity/CHI---VIDEOJUEGO
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+64526
+Successfully changed project path to: C:/Users/Cristian/Downloads/Unity/CHI---VIDEOJUEGO
+C:/Users/Cristian/Downloads/Unity/CHI---VIDEOJUEGO
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [28256]  Target information:
+
+Player connection [28256]  * "[IP] 10.43.149.136 [Port] 0 [Flags] 2 [Guid] 3815601158 [EditorId] 3815601158 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BIQ2PIQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28256] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28256] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 22.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f3 (96770f904ca7)
+[Subsystems] Discovering subsystems at path D:/Unity/2022.3.62f3/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Cristian/Downloads/Unity/CHI---VIDEOJUEGO/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x164c)
+    Vendor:   ATI
+    VRAM:     9146 MB
+    Driver:   31.0.21923.1000
+Initialize mono
+Mono path[0] = 'D:/Unity/2022.3.62f3/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2022.3.62f3/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2022.3.62f3/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/2022.3.62f3/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013586 seconds.
+- Loaded All Assemblies, in  0.799 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 528 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.138 seconds
+Domain Reload Profiling: 1938ms
+	BeginReloadAssembly (252ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (75ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (103ms)
+	LoadAllAssembliesAndSetupDomain (344ms)
+		LoadAssemblies (254ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (337ms)
+			TypeCache.Refresh (334ms)
+				TypeCache.ScanAssembly (310ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1139ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1045ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (696ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (247ms)
+			ProcessInitializeOnLoadMethodAttributes (88ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.375 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.691 seconds
+Domain Reload Profiling: 3060ms
+	BeginReloadAssembly (316ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (99ms)
+	LoadAllAssembliesAndSetupDomain (852ms)
+		LoadAssemblies (631ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (419ms)
+			TypeCache.Refresh (364ms)
+				TypeCache.ScanAssembly (335ms)
+			ScanForSourceGeneratedMonoScriptInfo (39ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1692ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1384ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (139ms)
+			ProcessInitializeOnLoadAttributes (1152ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 9.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3899 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (128.7 KB). Loaded Objects now: 4389.
+Memory consumption went from 147.4 MB to 147.3 MB.
+Total: 7.109100 ms (FindLiveObjects: 0.580600 ms CreateObjectMapping: 0.310700 ms MarkObjects: 6.001900 ms  DeleteObjects: 0.213600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2068924.447026 seconds.
+  path: Assets/THYRA/Fbx/Animaciones/AtaqueConSalto.fbx
+  artifactKey: Guid(567448f4ebfbfcd45b80218d02d5f3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Fbx/Animaciones/AtaqueConSalto.fbx using Guid(567448f4ebfbfcd45b80218d02d5f3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'fa35cb53645d131f08690f9cf3ff82a7') in 0.080620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 179
+========================================================================
+Received Import Request.
+  Time since last request: 380.794426 seconds.
+  path: Assets/THYRA/Fbx/Animaciones/MeleeAtaqueAtras.fbx
+  artifactKey: Guid(ba2b5c1d322cd7743b8715aab840a6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Fbx/Animaciones/MeleeAtaqueAtras.fbx using Guid(ba2b5c1d322cd7743b8715aab840a6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0d312dba8860c8da66017500969fa330') in 0.012836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 179
+========================================================================
+Received Import Request.
+  Time since last request: 10883.009059 seconds.
+  path: Assets/THYRA/Fbx/Animaciones/MeleeAtaqueHorizontal.fbx
+  artifactKey: Guid(16a06363ce6916643b5f7c53fc1021b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Fbx/Animaciones/MeleeAtaqueHorizontal.fbx using Guid(16a06363ce6916643b5f7c53fc1021b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '50a2828ae2380aa1703a17e421012e0d') in 0.011716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 179
+========================================================================
+Received Import Request.
+  Time since last request: 18.130373 seconds.
+  path: Assets/THYRA/Fbx/Animaciones/MeleeCombo1.fbx
+  artifactKey: Guid(621716463faf5f24f9c0a98b73ce3d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Fbx/Animaciones/MeleeCombo1.fbx using Guid(621716463faf5f24f9c0a98b73ce3d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2be437b04d0492af36e83676f9d45535') in 0.009345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 179
+========================================================================
+Received Import Request.
+  Time since last request: 16.140181 seconds.
+  path: Assets/THYRA/Fbx/Animaciones/MeleeCombo2.fbx
+  artifactKey: Guid(f6df4de5f0fbf174eb083631c73416bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Fbx/Animaciones/MeleeCombo2.fbx using Guid(f6df4de5f0fbf174eb083631c73416bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'dc0467d403fb24ba659b84a70bcbd7cb') in 0.011864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 179
+========================================================================
+Received Import Request.
+  Time since last request: 10.465506 seconds.
+  path: Assets/THYRA/Fbx/Animaciones/Muerte.fbx
+  artifactKey: Guid(5210c5184284ee6409c07c63f85c3cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Fbx/Animaciones/Muerte.fbx using Guid(5210c5184284ee6409c07c63f85c3cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e30330d936d5041383c46ba904dc1114') in 0.012365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 179
+========================================================================
+Received Import Request.
+  Time since last request: 285.925408 seconds.
+  path: Assets/THYRA/Animations/Thyra.controller
+  artifactKey: Guid(59a80c6e42d52004e82f5f8ff87d533e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Animations/Thyra.controller using Guid(59a80c6e42d52004e82f5f8ff87d533e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '358a10554608b33d41c5c90b355749d7') in 0.253216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 19.315940 seconds.
+  path: Assets/THYRA/Prefabs
+  artifactKey: Guid(c9140c52c5d78eb4fb4b43e207981383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Prefabs using Guid(c9140c52c5d78eb4fb4b43e207981383) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3c6205d34e51333adf32e5873bc8c309') in 0.001329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.115485 seconds.
+  path: Assets/THYRA/Prefabs/thyra.prefab
+  artifactKey: Guid(63b1e685c851233419639c4877a0b2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Prefabs/thyra.prefab using Guid(63b1e685c851233419639c4877a0b2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f10372169d2578cdc431c90d8a068ee2') in 0.502401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 56
+========================================================================
+Received Import Request.
+  Time since last request: 1.630934 seconds.
+  path: Assets/THYRA/Scripts
+  artifactKey: Guid(d4c423350eccf9b4bb22c86644b71287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Scripts using Guid(d4c423350eccf9b4bb22c86644b71287) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7285929d2ef52265cbd9adb6baba5556') in 0.001472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.339579 seconds.
+  path: Assets/THYRA/Scripts/Thyra-CTRL.Controller
+  artifactKey: Guid(a841318468b9e63499b4f9b94d09bb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Scripts/Thyra-CTRL.Controller using Guid(a841318468b9e63499b4f9b94d09bb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4880d58b76f68d4fbeb7ee3f6f526ece') in 0.105475 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 10.271725 seconds.
+  path: Assets/THYRA/Material/Thyra-Material.mat
+  artifactKey: Guid(d64a15e4ee0c9ac49a6c27d49097099c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Material/Thyra-Material.mat using Guid(d64a15e4ee0c9ac49a6c27d49097099c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0c08eb5d75adf5a0bccf831d1aaaeee9') in 0.096084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 66.202115 seconds.
+  path: Assets/THYRA/Scripts/Thyra-CTRL.Controller
+  artifactKey: Guid(a841318468b9e63499b4f9b94d09bb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/THYRA/Scripts/Thyra-CTRL.Controller using Guid(a841318468b9e63499b4f9b94d09bb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd23dbe307eca0cee8e70d36bdba3e8b1') in 0.128486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
