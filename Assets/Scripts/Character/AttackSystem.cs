@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine; // Espacio de nombres principal de Unity: contiene MonoBehaviour, Vector3, Collider, etc.
+using UnityEngine;
 
 // [RequireComponent] obliga a que el GameObject tenga un CharacterController.
 // Si no lo tiene, Unity lo agrega automáticamente al añadir este script.
@@ -17,7 +17,7 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask capaEnemigos;           // Capa(s) que identifican a los enemigos golpeables (se configura en el Inspector)
 
     [Header("Configuración de combate")]
-    public float dañoAtaque = 20f;           // Cantidad de daño que inflige cada golpe
+    public float dañoAtaque = 1f;           // Cantidad de daño que inflige cada golpe
     public float cadenciaAtaque = 0.6f;      // Tiempo mínimo (segundos) entre un ataque y el siguiente
     private float temporizadorAtaque = 0f;   // Cuenta regresiva interna para controlar la cadencia
 
@@ -33,7 +33,7 @@ public class PlayerAttack : MonoBehaviour
 
         // Advertencia en consola si falta el punto de ataque, para detectar el error rápido en desarrollo
         if (puntoAtaque == null)
-            Debug.LogWarning($"{name}: no se asignó 'puntoAtaque' en el Inspector.");
+            Debug.LogWarning($"{name}: no se asignó 'puntoAtaque' en el Inspector."); // pruebas
     }
 
     // Update se ejecuta una vez por frame; aquí se revisa el input del jugador
@@ -47,6 +47,7 @@ public class PlayerAttack : MonoBehaviour
         // Solo se activa en el frame exacto en que se presiona (no se repite si se mantiene presionado)
         if (Input.GetMouseButtonDown(0) && temporizadorAtaque <= 0f)
         {
+            Debug.Log("Mouse presionado");
             RealizarAtaque(); // Ejecuta la lógica del golpe
             temporizadorAtaque = cadenciaAtaque; // Reinicia el temporizador para bloquear ataques hasta que pase la cadencia
         }
