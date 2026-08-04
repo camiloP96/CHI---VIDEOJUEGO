@@ -87,6 +87,10 @@ public class Proyectil : MonoBehaviour
             {
                 objetivo.RecibirDaño(daño);
             }
+            else
+            {
+                Debug.LogWarning("El objeto con tag 'Player' no tiene un componente I Damageable");
+            }
         }
 
         // Instancia el efecto de impacto (chispas/explosión) en el punto de colisión, si está asignado

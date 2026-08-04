@@ -6897,6 +6897,23 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &356527121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356527101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d6f1ee951f8784396449767ce8c77c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaMaxima: 10
+  duracionInvulnerabilidad: 0.5
+  "efectoDa\xF1o": {fileID: 0}
+  "audioDa\xF1o": {fileID: 0}
+  audioMuerte: {fileID: 0}
 --- !u!4 &362382434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1656096754388019143, guid: 974c99cae4a5c51438b61c6566910d11, type: 3}
@@ -10200,7 +10217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 96a705dfef49cdd409251744b9949927, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7447462225137479368, guid: 96a705dfef49cdd409251744b9949927, type: 3}
       propertyPath: m_Layer
@@ -10242,6 +10259,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 96a705dfef49cdd409251744b9949927, type: 3}
       insertIndex: -1
       addedObject: {fileID: 356527120}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 96a705dfef49cdd409251744b9949927, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 356527121}
   m_SourcePrefab: {fileID: 100100000, guid: 96a705dfef49cdd409251744b9949927, type: 3}
 --- !u!4 &1221545565 stripped
 Transform:
@@ -11322,8 +11342,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoDisparo: {fileID: 1813910503}
   prefabProyectil: {fileID: 4600388780157944903, guid: 0163534e0c3b2ce409406b95e837aa2b, type: 3}
-  "da\xF1oPorDisparo": 2
-  cadenciaDisparo: 1
+  "da\xF1oPorDisparo": 1
+  cadenciaDisparo: 0.3
   alcanceMaximo: 50
   capaImpacto:
     serializedVersion: 2

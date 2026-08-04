@@ -371,6 +371,7 @@
 "Assets/Scripts/Camera/MouseLook.cs"
 "Assets/Scripts/Character/AttackSystem.cs"
 "Assets/Scripts/Character/MovementMainCharacter.cs"
+"Assets/Scripts/Character/PlayerHealth.cs"
 "Assets/Scripts/EnemigoDron/DroneAtaque.cs"
 "Assets/Scripts/EnemigoDron/EnemyMove.cs"
 "Assets/Scripts/EnemigoDron/GetDamageAndDie.cs"

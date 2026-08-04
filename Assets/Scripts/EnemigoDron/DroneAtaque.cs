@@ -48,10 +48,10 @@ public class DroneAttack : MonoBehaviour
             //!movimiento.EstaHuyendo &&
             Vector3.Distance(transform.position, jugador.transform.position) <= alcanceMaximo;
 
-        Debug.Log($"LOS: {movimiento.TieneLineaDeVision} | Huyendo: {movimiento.EstaHuyendo} | " +
+       /* Debug.Log($"LOS: {movimiento.TieneLineaDeVision} | Huyendo: {movimiento.EstaHuyendo} | " +
               $"Distancia: {Vector3.Distance(transform.position, jugador.transform.position):F1} | " +
               $"PuedeDisparar: {puedeDisparar} | Timer: {temporizadorDisparo:F2}");
-
+       */
 
         if (puedeDisparar && temporizadorDisparo <= 0f)
         {
@@ -86,8 +86,9 @@ public class DroneAttack : MonoBehaviour
 
         if (prefabProyectil != null)
         {
+            // Modo proyectil físico: se instancia y se le indica la dirección hacia la que debe volar
             GameObject instancia = Instantiate(prefabProyectil, origen, Quaternion.LookRotation(direccion));
-
+            // Busca el script Proyectil.cs en el objeto recién creado y le pasa la dirección
             Proyectil scriptProyectil = instancia.GetComponent<Proyectil>();
             if (scriptProyectil != null)
             {
@@ -96,6 +97,18 @@ public class DroneAttack : MonoBehaviour
             else
             {
                 Debug.LogWarning($"{name}: el prefab '{prefabProyectil.name}' no tiene el script Proyectil.cs asignado.");
+            }
+        }
+        else
+        {
+            //modo hitscan: disparo instantaneo por raycast
+            if (Physics.Raycast(origen,direccion,out RaycastHit hitInfo, alcanceMaximo, capaImpacto))
+            {
+                if (hitInfo.collider.CompareTag("Player"))
+                {
+                    IDamageable objetivoJugador = hitInfo.collider.GetComponent<IDamageable>();
+                    objetivoJugador?.RecibirDaño(dañoPorDisparo);
+                }
             }
         }
     }

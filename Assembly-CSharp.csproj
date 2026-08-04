@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\EnemigoDron\DroneAtaque.cs" />
     <Compile Include="Assets\Scripts\Character\MovementMainCharacter.cs" />
     <Compile Include="Assets\Characters\THYRA\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Character\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Character\AttackSystem.cs" />
   </ItemGroup>
   <ItemGroup>
