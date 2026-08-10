@@ -12,7 +12,7 @@ public class DroneHealth : MonoBehaviour, IDamageable
 {
     [Header("Vida")]
     public float vidaMaxima = 10f;     // Vida total del dron, configurable en el Inspector
-    private float vidaActual;           // Vida restante en tiempo de ejecución
+    public float vidaActual;           // Vida restante en tiempo de ejecución
 
     [Header("Referencias")]
     private EnemyDroneMove movimiento;  // Referencia al script de movimiento, para llamar a Muerte()
@@ -34,6 +34,7 @@ public class DroneHealth : MonoBehaviour, IDamageable
 
         vidaActual = vidaMaxima; // Al iniciar, el dron comienza con toda su vida
     }
+    public float VidaActual => vidaActual;
 
     // Implementación requerida por la interfaz IDamageable.
     // Este es el método que PlayerAttack.cs llama cuando el martillo golpea al dron.

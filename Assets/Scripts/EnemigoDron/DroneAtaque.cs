@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyDroneMove))]
@@ -5,7 +6,7 @@ public class DroneAttack : MonoBehaviour
 {
     [Header("Referencias")]
     public Transform puntoDisparo;        // Empty GameObject ubicado en el "cañón" del dron
-    public GameObject prefabProyectil;    // Opcional: si se deja vacío, se dispara en modo hitscan
+    public GameObject prefabProyectil;    // Opcional: si se deja vacío, se dispara en modo hitscan (láser)
     private EnemyDroneMove movimiento;
     private Animator animator;
     private GameObject jugador;
@@ -16,6 +17,15 @@ public class DroneAttack : MonoBehaviour
     public float alcanceMaximo = 15f;
     public LayerMask capaImpacto;         // capas que puede golpear el disparo (Player, paredes, etc.)
     private float temporizadorDisparo;
+
+    [Header("Efecto visual de láser (modo hitscan)")]
+    // LineRenderer que dibuja el rayo instantáneo. Puede estar en el mismo GameObject del dron
+    // o en un hijo (ej. "LaserVisual"); solo arrástralo aquí desde el Inspector.
+    public LineRenderer lineaLaser;
+    // Cuánto tiempo permanece visible el láser en pantalla antes de apagarse (en segundos).
+    // Un valor bajo (0.05–0.1) da la sensación de un disparo instantáneo tipo "flash".
+    public float duracionLaser = 0.08f;
+    private Coroutine corrutinaLaser; // referencia activa, para poder cancelar si se dispara muy seguido
 
     [Header("Efectos (opcional)")]
     public ParticleSystem efectoDisparo;
@@ -45,13 +55,8 @@ public class DroneAttack : MonoBehaviour
 
         bool puedeDisparar =
             movimiento.TieneLineaDeVision &&
-            //!movimiento.EstaHuyendo &&
+            !movimiento.EstaHuyendo &&
             Vector3.Distance(transform.position, jugador.transform.position) <= alcanceMaximo;
-
-       /* Debug.Log($"LOS: {movimiento.TieneLineaDeVision} | Huyendo: {movimiento.EstaHuyendo} | " +
-              $"Distancia: {Vector3.Distance(transform.position, jugador.transform.position):F1} | " +
-              $"PuedeDisparar: {puedeDisparar} | Timer: {temporizadorDisparo:F2}");
-       */
 
         if (puedeDisparar && temporizadorDisparo <= 0f)
         {
@@ -88,6 +93,7 @@ public class DroneAttack : MonoBehaviour
         {
             // Modo proyectil físico: se instancia y se le indica la dirección hacia la que debe volar
             GameObject instancia = Instantiate(prefabProyectil, origen, Quaternion.LookRotation(direccion));
+
             // Busca el script Proyectil.cs en el objeto recién creado y le pasa la dirección
             Proyectil scriptProyectil = instancia.GetComponent<Proyectil>();
             if (scriptProyectil != null)
@@ -101,15 +107,55 @@ public class DroneAttack : MonoBehaviour
         }
         else
         {
-            //modo hitscan: disparo instantaneo por raycast
-            if (Physics.Raycast(origen,direccion,out RaycastHit hitInfo, alcanceMaximo, capaImpacto))
+            // Modo hitscan: disparo instantáneo por raycast
+            Vector3 destinoFinal;
+
+            if (Physics.Raycast(origen, direccion, out RaycastHit hitInfo, alcanceMaximo, capaImpacto))
             {
+                // Si el rayo golpeó algo, el láser visual debe terminar EXACTAMENTE en ese punto
+                // (ej. la pared o el jugador), no atravesarlo.
+                destinoFinal = hitInfo.point;
+
                 if (hitInfo.collider.CompareTag("Player"))
                 {
                     IDamageable objetivoJugador = hitInfo.collider.GetComponent<IDamageable>();
                     objetivoJugador?.RecibirDaño(dañoPorDisparo);
                 }
             }
+            else
+            {
+                // Si no golpeó nada (disparo al aire), el láser se dibuja igual hasta su alcance máximo,
+                // para que se vea completo en vez de no aparecer.
+                destinoFinal = origen + direccion * alcanceMaximo;
+            }
+
+            MostrarLaser(origen, destinoFinal);
         }
+    }
+
+    // Dibuja el rayo láser entre dos puntos y lo oculta automáticamente después de "duracionLaser" segundos.
+    private void MostrarLaser(Vector3 desde, Vector3 hasta)
+    {
+        if (lineaLaser == null) return; // si no se asignó un LineRenderer, simplemente no dibuja nada
+
+        // Si el dron dispara de nuevo antes de que el láser anterior termine de ocultarse,
+        // cancelamos esa corrutina previa para evitar comportamientos superpuestos/errores.
+        if (corrutinaLaser != null)
+        {
+            StopCoroutine(corrutinaLaser);
+        }
+
+        lineaLaser.enabled = true;
+        lineaLaser.SetPosition(0, desde); // punto inicial: el cañón del dron
+        lineaLaser.SetPosition(1, hasta); // punto final: el impacto o el alcance máximo
+
+        corrutinaLaser = StartCoroutine(OcultarLaserDespuesDe(duracionLaser));
+    }
+
+    // Corrutina simple: espera el tiempo indicado y apaga el LineRenderer
+    private IEnumerator OcultarLaserDespuesDe(float segundos)
+    {
+        yield return new WaitForSeconds(segundos);
+        if (lineaLaser != null) lineaLaser.enabled = false;
     }
 }

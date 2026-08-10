@@ -47,7 +47,7 @@ public class PlayerAttack : MonoBehaviour
         // Solo se activa en el frame exacto en que se presiona (no se repite si se mantiene presionado)
         if (Input.GetMouseButtonDown(0) && temporizadorAtaque <= 0f)
         {
-            Debug.Log("Mouse presionado");
+            //Debug.Log("Mouse presionado");
             RealizarAtaque(); // Ejecuta la lógica del golpe
             temporizadorAtaque = cadenciaAtaque; // Reinicia el temporizador para bloquear ataques hasta que pase la cadencia
         }

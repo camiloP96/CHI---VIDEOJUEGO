@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\MovementMainCharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Character\\MovementMainCharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\ContoladorVictoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\ContoladorVictoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\PlayerHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Character\\PlayerHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\PantallaVictoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\PantallaVictoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\UIGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\UIGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\ControladorPantallaMuerte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\ControladorPantallaMuerte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\EnemyCounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\EnemyCounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\UIInGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\UIInGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\DroneAtaque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +35,24 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EnemigoDron\\Proyectil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\EnemyMove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EnemigoDron\\EnemyMove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\GetDamageAndDie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EnemigoDron\\GetDamageAndDie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\PlayerHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Character\\PlayerHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\AttackSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Character\\AttackSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\GetDamageAndDie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EnemigoDron\\GetDamageAndDie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\EnemyMove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EnemigoDron\\EnemyMove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\MovementMainCharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Character\\MovementMainCharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,37 +62,113 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerHealth.cs",
-              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\PlayerHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\PlayerHealth.cs",
-              "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\PlayerHealth.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\PlayerHealth.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGYAAAACAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ContoladorVictoria.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\ContoladorVictoria.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ContoladorVictoria.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\ContoladorVictoria.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ContoladorVictoria.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-04T02:15:35.418Z",
+              "WhenOpened": "2026-08-10T04:06:51.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PantallaVictoria.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\PantallaVictoria.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PantallaVictoria.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\PantallaVictoria.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\PantallaVictoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T04:02:25.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ControladorPantallaMuerte.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\ControladorPantallaMuerte.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ControladorPantallaMuerte.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\ControladorPantallaMuerte.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ControladorPantallaMuerte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T02:29:31.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnemyCounter.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\EnemyCounter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\EnemyCounter.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\EnemyCounter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\EnemyCounter.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T01:14:33.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UIInGame.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\UIInGame.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIInGame.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\UIInGame.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIInGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:45:21.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UIGame.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\UIGame.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIGame.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\UI\\UIGame.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:44:03.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\PlayerHealth.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\PlayerHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T02:15:35.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Proyectil.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\Proyectil.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemigoDron\\Proyectil.cs",
               "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\Proyectil.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemigoDron\\Proyectil.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAAFsAAABjAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T02:14:34.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-03T02:14:34.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "MovementMainCharacter.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\MovementMainCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\MovementMainCharacter.cs",
@@ -76,56 +176,53 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\MovementMainCharacter.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAuwAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T01:18:22.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-21T01:18:22.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "EnemyMove.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\EnemyMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemigoDron\\EnemyMove.cs",
               "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\EnemyMove.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemigoDron\\EnemyMove.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAACoAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAJQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T01:30:50.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-03T01:30:50.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "DroneAtaque.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\DroneAtaque.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemigoDron\\DroneAtaque.cs",
               "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\DroneAtaque.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemigoDron\\DroneAtaque.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGgAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T01:33:37.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-02T01:33:37.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GetDamageAndDie.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\GetDamageAndDie.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemigoDron\\GetDamageAndDie.cs",
               "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\EnemigoDron\\GetDamageAndDie.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemigoDron\\GetDamageAndDie.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-02T00:20:51.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "AttackSystem.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\AttackSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\AttackSystem.cs",
               "ToolTip": "C:\\Users\\usuario\\Documents\\Unity Projects\\Proyect class\\Assets\\Scripts\\Character\\AttackSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character\\AttackSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-01T21:02:32.64Z"
             }

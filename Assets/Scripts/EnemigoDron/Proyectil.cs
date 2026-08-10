@@ -20,25 +20,37 @@ public class Proyectil : MonoBehaviour
     // Bandera para saber si Inicializar() fue realmente llamado desde DroneAttack
     private bool inicializado = false;
 
+    // Referencia al Rigidbody que se usa para mover el proyectil de forma compatible con la física.
+    private Rigidbody rb;
+
     void Awake()
     {
-        // Si el prefab tiene un Rigidbody (necesario para que OnTriggerEnter funcione),
-        // lo forzamos a modo kinemático para que NO controle la física del objeto.
-        // Así evitamos que el motor de física sobreescriba el movimiento manual
-        // que hacemos con transform.Translate() en Update(), que es la causa más común
-        // de que un proyectil "se quede quieto en el aire" a pesar de tener código de movimiento.
-        Rigidbody rb = GetComponent<Rigidbody>();
-        if (rb != null)
+        // Se agrega un Rigidbody por código si el prefab no tiene uno ya asignado manualmente.
+        // Esto es OBLIGATORIO para que la física de Unity detecte correctamente el movimiento
+        // del Collider del proyectil: mover un Collider únicamente con Transform.Translate(),
+        // sin Rigidbody, puede hacer que el motor de física nunca registre la nueva posición
+        // a tiempo para generar OnTriggerEnter, dependiendo de la configuración del proyecto.
+        rb = GetComponent<Rigidbody>();
+        if (rb == null)
         {
-            rb.isKinematic = true; // desactiva la simulación física, pero mantiene la detección de colisión
-            rb.useGravity = false; // evita que caiga por gravedad si por alguna razón se activara
+            rb = gameObject.AddComponent<Rigidbody>();
         }
+
+        // Kinematic = true: el Rigidbody NO reacciona a fuerzas externas (gravedad, empujones),
+        // pero SÍ permite que Unity detecte correctamente los triggers cuando lo movemos
+        // manualmente con MovePosition(), que es la forma recomendada de mover un objeto
+        // "a mano" sin que se comporte como un objeto físico normal.
+        rb.isKinematic = true;
+        rb.useGravity = false;
+
+        // Collision Detection en modo Continuous ayuda a evitar que, a alta velocidad,
+        // el proyectil "atraviese" al jugador sin detectar la colisión entre un frame y otro.
+        rb.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
     }
 
     // Método público para que DroneAttack le indique hacia dónde debe volar
     public void Inicializar(Vector3 direccionDisparo)
     {
-        Debug.Log($"Inicializar() SÍ fue llamado. Dirección recibida: {direccionDisparo}"); // LOG TEMPORAL DE DIAGNÓSTICO
         direccion = direccionDisparo.normalized;
         inicializado = true;
     }
@@ -50,7 +62,7 @@ public class Proyectil : MonoBehaviour
         Destroy(gameObject, tiempoDeVida);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // Si por alguna razón Inicializar() nunca fue llamado (ej. DroneAttack no encontró
         // el componente Proyectil, o hay un error en la cadena de instanciación),
@@ -62,16 +74,20 @@ public class Proyectil : MonoBehaviour
             return; // evita mover el objeto con dirección (0,0,0), que no haría nada de todos modos
         }
 
-        // Mueve el proyectil en línea recta cada frame, en la dirección asignada.
-        // Transform.Translate con Space.World asegura que se mueva en coordenadas globales,
-        // sin importar la rotación del propio proyectil.
-        transform.Translate(direccion * velocidad * Time.deltaTime, Space.World);
+        // Rigidbody.MovePosition mueve el objeto de forma "física", garantizando que el motor
+        // de colisiones registre correctamente la nueva posición del Collider en cada paso.
+        // Se usa FixedUpdate() en vez de Update() porque es el ciclo correcto para todo
+        // movimiento relacionado con física en Unity (sincronizado con el motor de físicas).
+        Vector3 nuevaPosicion = rb.position + direccion * velocidad * Time.fixedDeltaTime;
+        rb.MovePosition(nuevaPosicion);
     }
 
     // Se ejecuta automáticamente cuando el Collider de este proyectil
     // (debe ser Trigger) toca otro Collider en la escena.
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log($"[DIAGNOSTICO] Proyectil tocó: {other.gameObject.name} | Layer: {LayerMask.LayerToName(other.gameObject.layer)} | Tag: {other.tag}");
+
         // Filtra: solo reacciona a colliders que estén dentro de la capaImpacto configurada.
         // El operador de bits compara si la capa del objeto golpeado está incluida en la máscara.
         if (((1 << other.gameObject.layer) & capaImpacto) == 0)
@@ -89,7 +105,7 @@ public class Proyectil : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("El objeto con tag 'Player' no tiene un componente I Damageable");
+                Debug.LogWarning("El objeto con tag 'Player' no tiene un componente IDamageable (ej. PlayerHealth).");
             }
         }
 
@@ -98,6 +114,8 @@ public class Proyectil : MonoBehaviour
         {
             Instantiate(efectoImpactoPrefab, transform.position, Quaternion.identity);
         }
+
+        Debug.Log($"[DIAGNOSTICO] Proyectil se destruye por colisión con: {other.gameObject.name}");
 
         // Destruye el proyectil al impactar, sin importar qué golpeó (jugador o pared),
         // para que no atraviese obstáculos indefinidamente.

@@ -14,47 +14,33 @@
         "m_CodePreviewVisible": true,
         "m_OpenUXMLFiles": [
             {
-                "m_OpenUSSFiles": [
-                    {
-                        "m_StyleSheet": {
-                            "fileID": 7433441132597879392,
-                            "guid": "3996fa050e8430c47a5e6037e8b333a9",
-                            "type": 3
-                        },
-                        "m_BackupStyleSheet": {
-                            "instanceID": 0
-                        },
-                        "m_OldPath": "Assets/UI/MainMenuUI/MenuStyleDpcument.uss"
-                    }
-                ],
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/MainMenuUI/NewUiDocumentMenu.uxml",
+                "m_OpenUSSFiles": [],
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/PantallaVictoria/PantallaVictoria.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "5c36dfb99d6475b4b8546d95575df25c",
+                    "guid": "8b8b17615c159aa4e8b9f940e4e4da8c",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "fileID": 7433441132597879392,
-                    "guid": "3996fa050e8430c47a5e6037e8b333a9",
-                    "type": 3
+                    "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "5c36dfb99d6475b4b8546d95575df25c",
-                    "UxmlPath": "Assets/UI/MainMenuUI/NewUiDocumentMenu.uxml",
+                    "UxmlGuid": "8b8b17615c159aa4e8b9f940e4e4da8c",
+                    "UxmlPath": "Assets/UI/PantallaVictoria/PantallaVictoria.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
-                    "CanvasWidth": 1513,
-                    "CanvasHeight": 904,
-                    "MatchGameView": false,
-                    "ZoomScale": 0.3499999940395355,
+                    "CanvasWidth": 1920,
+                    "CanvasHeight": 1080,
+                    "MatchGameView": true,
+                    "ZoomScale": 0.25,
                     "PanOffset": {
-                        "x": 260.2994689941406,
-                        "y": 223.355224609375
+                        "x": 28.000411987304689,
+                        "y": 127.27598571777344
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
                     "CameraModeCanvasBackgroundOpacity": 1.0,
-                    "EnableCanvasBackground": false,
+                    "EnableCanvasBackground": true,
                     "CanvasBackgroundMode": 0,
                     "CanvasBackgroundColor": {
                         "r": 0.0,

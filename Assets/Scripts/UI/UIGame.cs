@@ -24,6 +24,6 @@ public class MenuController : MonoBehaviour
 
     private void OnPlayButtonClicked()
     {
-        SceneManager.LoadScene("TestLEvel");
+        SceneManager.LoadScene("TestScene");
     }
 }

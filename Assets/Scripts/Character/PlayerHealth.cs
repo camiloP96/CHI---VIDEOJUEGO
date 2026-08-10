@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 {
     [Header("Vida")]
     public float vidaMaxima = 100f;
-    private float vidaActual;
+    public float vidaActual;
 
     [Header("Invulnerabilidad temporal")]
     // Tiempo durante el cual el jugador no puede recibir más daño después de un golpe.
@@ -63,6 +63,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     // (Proyectil.cs del dron, o cualquier otro script futuro) llaman para hacer daño.
     public void RecibirDaño(float cantidad)
     {
+
+        Debug.Log($"[DIAGNOSTICO] RecibirDaño() llamado con {cantidad} de daño. EstaMuerto: {estaMuerto} | EsInvulnerable: {esInvulnerable}");
         // Si ya está muerto o actualmente es invulnerable, ignora el daño entrante
         if (estaMuerto || esInvulnerable) return;
 

@@ -1,16 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/UIGamplayStyle.uss?fileID=7433441132597879392&amp;guid=764c667f46c80184dbeeaecbcd9e3b0c&amp;type=3#UIGamplayStyle" />
-    <ui:VisualElement name="ContenedorUIGameplay" style="flex-grow: 0; transform-origin: center; -unity-text-outline-color: rgb(87, 186, 54); width: 100%; height: 100%; flex-direction: row; flex-shrink: 0;">
-        <ui:VisualElement name="barra_vida" class="barritaVida" />
-        <ui:VisualElement name="barra_vida1" class="barritaVida" />
-        <ui:VisualElement name="barra_vida2" class="barritaVida" />
-        <ui:VisualElement name="barra_vida3" class="barritaVida" />
-        <ui:VisualElement name="barra_vida4" class="barritaVida" />
-        <ui:VisualElement name="barra_vida5" class="barritaVida" />
-        <ui:VisualElement name="barra_vida6" class="barritaVida" />
-        <ui:VisualElement name="barra_vida7" class="barritaVida" />
-        <ui:VisualElement name="barra_vida8" class="barritaVida" />
-        <ui:VisualElement name="barra_vida9" class="barritaVida" />
-        <ui:ProgressBar value="3" high-value="10" focusable="false" name="ProgressBarMineral" class="barraMineral unity-progress-bar_progress unity-progres-bar__background unity-progress-bar__container" style="background-color: rgba(0, 0, 0, 0); height: 4%; flex-grow: 1; flex-shrink: 1; margin-top: 0.2%; margin-right: 0.2%; margin-bottom: 0.2%; margin-left: 0.2%; -unity-background-image-tint-color: rgba(255, 255, 255, 0); width: 30%; left: 2px; top: 105px;" />
+    <Style src="project://database/Assets/UI/IngameUI/UIGamplayStyle.uss?fileID=7433441132597879392&amp;guid=764c667f46c80184dbeeaecbcd9e3b0c&amp;type=3#UIGamplayStyle" />
+    <ui:VisualElement name="ContenedorVida" style="flex-grow: 0; transform-origin: center; -unity-text-outline-color: rgb(87, 186, 54); width: 100%; height: 10%; flex-direction: row; flex-shrink: 0.5; justify-content: flex-start; align-self: flex-start;">
+        <ui:Label tabindex="-1" text="VIDA" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 50px; padding-top: 10px; padding-right: 2px; padding-left: 35px; -unity-font: url(&quot;project://database/Assets/Sprites/UIMenu/Neonix.ttf?fileID=12800000&amp;guid=6c258e101a433d34b9314b6e6201f35c&amp;type=3#Neonix&quot;); -unity-font-style: bold; color: rgb(33, 253, 18);" />
+        <ui:ProgressBar value="22" name="barraVida" style="width: 25%; margin-top: 30px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Muertos" style="flex-grow: 1; font-size: 80px; flex-direction: row-reverse; align-self: flex-start; justify-content: center;">
+        <ui:Label tabindex="-1" text="Drones:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Enemigo" style="-unity-font: url(&quot;project://database/Assets/Sprites/UIMenu/Neonix.ttf?fileID=12800000&amp;guid=6c258e101a433d34b9314b6e6201f35c&amp;type=3#Neonix&quot;); font-size: 50px; margin-top: 5px; margin-right: 12px; margin-bottom: 12px; margin-left: 35px; color: rgb(72, 241, 56); padding-top: 0;" />
     </ui:VisualElement>
 </ui:UXML>

@@ -6825,8 +6825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c02bcff938591449b9c90497cd9ca4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 2
-  velocidadCorrer: 5
+  velocidadMovimiento: 3
+  velocidadCorrer: 7
   gravedad: -9.81
   altitudSalto: 1.5
   velocidadDash: 20
@@ -6909,8 +6909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d6f1ee951f8784396449767ce8c77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaxima: 10
-  duracionInvulnerabilidad: 0.5
+  vidaMaxima: 50
+  duracionInvulnerabilidad: 8
   "efectoDa\xF1o": {fileID: 0}
   "audioDa\xF1o": {fileID: 0}
   audioMuerte: {fileID: 0}
@@ -10217,7 +10217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 96a705dfef49cdd409251744b9949927, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7447462225137479368, guid: 96a705dfef49cdd409251744b9949927, type: 3}
       propertyPath: m_Layer
@@ -11342,8 +11342,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoDisparo: {fileID: 1813910503}
   prefabProyectil: {fileID: 4600388780157944903, guid: 0163534e0c3b2ce409406b95e837aa2b, type: 3}
-  "da\xF1oPorDisparo": 1
-  cadenciaDisparo: 0.3
+  "da\xF1oPorDisparo": 0.1
+  cadenciaDisparo: 1
   alcanceMaximo: 50
   capaImpacto:
     serializedVersion: 2
@@ -11368,7 +11368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621ef8efcdbe8254b8efa76995e497f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaxima: 10
+  vidaMaxima: 5
   efectoImpacto: {fileID: 0}
   audioImpacto: {fileID: 0}
 --- !u!1 &1562942468

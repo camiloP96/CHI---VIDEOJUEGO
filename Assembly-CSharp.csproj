@@ -60,10 +60,15 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\UI\ControladorPantallaMuerte.cs" />
+    <Compile Include="Assets\Scripts\UI\EnemyCounter.cs" />
     <Compile Include="Assets\Scripts\Camera\MouseLook.cs" />
     <Compile Include="Assets\Scripts\EnemigoDron\EnemyMove.cs" />
+    <Compile Include="Assets\Scripts\UI\ContoladorVictoria.cs" />
     <Compile Include="Assets\Scripts\EnemigoDron\Proyectil.cs" />
     <Compile Include="Assets\Characters\THYRA\Scripts\PlayerFollow.cs" />
+    <Compile Include="Assets\Scripts\UI\UIInGame.cs" />
+    <Compile Include="Assets\Scripts\UI\PantallaVictoria.cs" />
     <Compile Include="Assets\Scripts\UI\UIGame.cs" />
     <Compile Include="Assets\Scripts\EnemigoDron\GetDamageAndDie.cs" />
     <Compile Include="Assets\Scripts\EnemigoDron\DroneAtaque.cs" />
@@ -78,7 +83,9 @@
     <None Include="Assets\Characters\VoodooPlay\Readme.txt" />
     <None Include="Assets\UI\IngameUI\UI document.uxml" />
     <None Include="Assets\UI\MainMenuUI\MenuStyleDpcument.uss" />
+    <None Include="Assets\UI\PantallaVictoria\PantallaVictoria.uxml" />
     <None Include="Assets\UI\MainMenuUI\NewUiDocumentMenu.uxml" />
+    <None Include="Assets\UI\PantallaMuerte\PantallaMuerte.uxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

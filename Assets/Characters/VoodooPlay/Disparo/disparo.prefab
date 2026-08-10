@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3681328659753138454
+--- !u!1001 &4715514131206452151
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c7fd8f8b27cb5824a9a7dd7d9a8f60d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.587036
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c7fd8f8b27cb5824a9a7dd7d9a8f60d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.697285
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c7fd8f8b27cb5824a9a7dd7d9a8f60d0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.14719
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c7fd8f8b27cb5824a9a7dd7d9a8f60d0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -58,42 +58,42 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c7fd8f8b27cb5824a9a7dd7d9a8f60d0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9164299670207729829}
+      addedObject: {fileID: 1213546358750946187}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c7fd8f8b27cb5824a9a7dd7d9a8f60d0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1073470146870854497}
+      addedObject: {fileID: -389455645725237010}
   m_SourcePrefab: {fileID: 100100000, guid: c7fd8f8b27cb5824a9a7dd7d9a8f60d0, type: 3}
---- !u!1 &4600388780157944903 stripped
+--- !u!1 &5598456815058161382 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c7fd8f8b27cb5824a9a7dd7d9a8f60d0, type: 3}
-  m_PrefabInstance: {fileID: 3681328659753138454}
+  m_PrefabInstance: {fileID: 4715514131206452151}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9164299670207729829
+--- !u!114 &1213546358750946187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4600388780157944903}
+  m_GameObject: {fileID: 5598456815058161382}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca2ba91a0a5adf941a99505ebaa1adc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 20
-  tiempoDeVida: 5
-  "da\xF1o": 2
+  velocidad: 5
+  tiempoDeVida: 10
+  "da\xF1o": 1
   capaImpacto:
     serializedVersion: 2
     m_Bits: 8
   efectoImpactoPrefab: {fileID: 0}
---- !u!135 &1073470146870854497
+--- !u!135 &-389455645725237010
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4600388780157944903}
+  m_GameObject: {fileID: 5598456815058161382}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -106,5 +106,5 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.01
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}

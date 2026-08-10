@@ -376,7 +376,12 @@
 "Assets/Scripts/EnemigoDron/EnemyMove.cs"
 "Assets/Scripts/EnemigoDron/GetDamageAndDie.cs"
 "Assets/Scripts/EnemigoDron/Proyectil.cs"
+"Assets/Scripts/UI/ContoladorVictoria.cs"
+"Assets/Scripts/UI/ControladorPantallaMuerte.cs"
+"Assets/Scripts/UI/EnemyCounter.cs"
+"Assets/Scripts/UI/PantallaVictoria.cs"
 "Assets/Scripts/UI/UIGame.cs"
+"Assets/Scripts/UI/UIInGame.cs"
 -langversion:9.0
 /deterministic
 /optimize+
