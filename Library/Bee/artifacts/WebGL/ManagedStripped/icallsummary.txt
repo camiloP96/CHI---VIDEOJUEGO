@@ -26,13 +26,14 @@ UnityEngine.AI.NavMesh::InternalSetLinkOwner
 UnityEngine.AI.NavMesh::InternalSetOwner
 UnityEngine.AI.NavMesh::IsValidLinkHandle
 UnityEngine.AI.NavMesh::IsValidNavMeshDataHandle
+UnityEngine.AI.NavMesh::SamplePosition_Injected
 UnityEngine.AI.NavMesh::AddLinkInternal_Injected
 UnityEngine.AI.NavMesh::AddNavMeshDataTransformedInternal_Injected
 UnityEngine.AI.NavMesh::GetSettingsByID_Injected
 UnityEngine.AI.NavMesh::RemoveLinkInternal
 UnityEngine.AI.NavMesh::RemoveNavMeshDataInternal
 UnityEngine.AI.NavMeshAgent::SetDestination_Injected
-UnityEngine.AI.NavMeshAgent::get_speed
+UnityEngine.AI.NavMeshAgent::get_velocity_Injected
 UnityEngine.AI.NavMeshAgent::set_isStopped
 UnityEngine.AI.NavMeshAgent::set_speed
 UnityEngine.AI.NavMeshBuilder::UpdateNavMeshDataListInternal_Injected
@@ -106,6 +107,7 @@ UnityEngine.Application::OpenURL
 UnityEngine.Application::get_platform
 UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.Audio.AudioPlayableOutput::InternalSetEvaluateOnSeek
+UnityEngine.AudioSource::PlayHelper
 UnityEngine.Avatar::get_humanDescription_Injected
 UnityEngine.AvatarMask::GetHumanoidBodyPartActive
 UnityEngine.AvatarMask::get_transformCount
@@ -240,6 +242,7 @@ UnityEngine.CubemapArray::Internal_CreateImpl
 UnityEngine.CubemapArray::get_isReadable
 UnityEngine.Cursor::SetCursor_Injected
 UnityEngine.Cursor::set_lockState
+UnityEngine.Cursor::set_visible
 UnityEngine.Cursor::get_lockState
 UnityEngine.Debug::get_isDebugBuild
 UnityEngine.Debug::ExtractStackTraceNoAlloc
@@ -314,6 +317,7 @@ UnityEngine.GameObject::TryGetComponentInternal
 UnityEngine.GameObject::FindGameObjectWithTag
 UnityEngine.GameObject::get_transform
 UnityEngine.Gizmos::DrawLine_Injected
+UnityEngine.Gizmos::DrawWireSphere_Injected
 UnityEngine.Gizmos::set_color_Injected
 UnityEngine.Gizmos::set_matrix_Injected
 UnityEngine.GL::Begin
@@ -434,6 +438,7 @@ UnityEngine.Internal.InputUnsafeUtility::GetAxisRaw__Unmanaged
 UnityEngine.Internal.InputUnsafeUtility::GetAxis__Unmanaged
 UnityEngine.JsonUtility::FromJsonInternal
 UnityEngine.JsonUtility::ToJsonInternal
+UnityEngine.LayerMask::LayerToName
 UnityEngine.Light::get_useColorTemperature
 UnityEngine.Light::get_bounceIntensity
 UnityEngine.Light::get_colorTemperature
@@ -446,6 +451,7 @@ UnityEngine.Light::get_color_Injected
 UnityEngine.Light::get_shadows
 UnityEngine.Light::get_type
 UnityEngine.Light::get_cookie
+UnityEngine.LineRenderer::SetPosition_Injected
 UnityEngine.Material::HasProperty
 UnityEngine.Material::SetPass
 UnityEngine.Material::ComputeCRC
@@ -523,11 +529,14 @@ UnityEngine.Object::set_hideFlags
 UnityEngine.Object::get_hideFlags
 UnityEngine.Object::FindObjectFromInstanceID
 UnityEngine.Object::Internal_CloneSingle
+UnityEngine.Object::Internal_InstantiateSingle_Injected
+UnityEngine.Object::FindObjectsByType
 UnityEngine.ObjectGUIState::Internal_Create
 UnityEngine.ObjectGUIState::Internal_Destroy
 UnityEngine.ParticleSystem::EmitOld_Internal
 UnityEngine.ParticleSystem::Emit_Injected
 UnityEngine.ParticleSystem::Emit_Internal
+UnityEngine.ParticleSystem::Play
 UnityEngine.ParticleSystemRenderer::GetMeshes
 UnityEngine.Physics::Query_ComputePenetration_Injected
 UnityEngine.Physics::get_invokeCollisionCallbacks
@@ -537,6 +546,7 @@ UnityEngine.Physics::SendOnCollisionExit
 UnityEngine.Physics::SendOnCollisionStay
 UnityEngine.Physics::get_defaultPhysicsScene_Injected
 UnityEngine.Physics::GetColliderByInstanceID
+UnityEngine.Physics::OverlapSphere_Internal_Injected
 UnityEngine.Physics::GetBodyByInstanceID
 UnityEngine.Physics::Internal_RaycastAll_Injected
 UnityEngine.Physics2D::get_queriesHitTriggers
@@ -649,6 +659,7 @@ UnityEngine.Renderer::get_sortingGroupID
 UnityEngine.Renderer::get_sortingGroupOrder
 UnityEngine.Renderer::get_sortingLayerID
 UnityEngine.Renderer::get_sortingOrder
+UnityEngine.Renderer::set_enabled
 UnityEngine.Rendering.GraphicsSettings::get_lightsUseLinearIntensity
 UnityEngine.Rendering.ScriptableRenderContext::GetCameras_Internal_Injected
 UnityEngine.Rendering.SortingGroup::get_invalidSortingGroupID
@@ -678,12 +689,18 @@ UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
 UnityEngine.ResourcesAPIInternal::FindShaderByName
 UnityEngine.Rigidbody::get_mass
 UnityEngine.Rigidbody::AddForce_Injected
+UnityEngine.Rigidbody::MovePosition_Injected
+UnityEngine.Rigidbody::get_position_Injected
 UnityEngine.Rigidbody::get_velocity_Injected
+UnityEngine.Rigidbody::set_collisionDetectionMode
 UnityEngine.Rigidbody::set_detectCollisions
 UnityEngine.Rigidbody::set_isKinematic
+UnityEngine.Rigidbody::set_useGravity
 UnityEngine.Rigidbody2D::get_mass
 UnityEngine.Rigidbody2D::get_velocity_Injected
+UnityEngine.SceneManagement.Scene::GetNameInternal
 UnityEngine.SceneManagement.SceneManager::get_sceneCount
+UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected
 UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected
 UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
 UnityEngine.Screen::get_fullScreen
@@ -792,6 +809,7 @@ UnityEngine.Time::get_realtimeSinceStartup
 UnityEngine.Time::get_time
 UnityEngine.Time::get_unscaledDeltaTime
 UnityEngine.Time::get_unscaledTime
+UnityEngine.Time::set_timeScale
 UnityEngine.TouchScreenKeyboard::IsInPlaceEditingAllowed
 UnityEngine.TouchScreenKeyboard::get_active
 UnityEngine.TouchScreenKeyboard::get_canGetSelection

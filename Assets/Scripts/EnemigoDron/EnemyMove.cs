@@ -53,6 +53,7 @@ public class EnemyDroneMove : MonoBehaviour
         ActualizarLineaDeVision();
 
         Vector3 haciaJugador = jugador.transform.position - transform.position; // dirección correcta
+        
         float distancia = haciaJugador.magnitude;
 
         temporizadorReposicion -= Time.deltaTime;
